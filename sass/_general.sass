@@ -1,0 +1,120 @@
+.section-gap
+    padding: 80px 0
+    @media #{$medium-and-down}
+        padding: 40px 0
+    @media #{$large-and-up}
+        padding: 40px 0
+    @media #{$extra-large-and-up}
+        padding: 80px 0
+.owl-dots
+    display: flex
+    justify-content: center
+    position: absolute
+    width: 100%
+    left: 0
+    bottom: 20px
+    .owl-dot
+        width: 18px !important
+        height: 18px !important
+        margin: 5px
+        border-radius: 50%
+        background: none
+        border: 2px solid rgba(255, 255, 255, 0.5)
+        outline: none !important
+        position: relative
+        -webkit-transition: .3s all ease
+        -o-transition: .3s all ease
+        transition: .3s all ease
+        display: inline-block
+        &.active
+            span
+                background: white
+        span
+            position: absolute
+            width: 12px
+            height: 12px
+            background: rgba(255, 255, 255, 0.5)
+            border-radius: 50% !important
+            left: 50%
+            top: 50%
+            display: block
+            transform: translate(-50%, -50%)
+#page-not-found
+    position: relative
+    height: 100vh
+    background: #030005
+    .page-not-found-wrap
+        max-width: 767px
+        width: 100%
+        line-height: 1.4
+        text-align: center
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+
+    .not-found-404
+        position: relative
+        height: 180px
+        margin-bottom: 20px
+        z-index: -1
+        @media #{$small-only}
+            margin-bottom: 50px
+
+    h1
+        font-family: 'Montserrat', sans-serif
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        font-size: 224px
+        font-weight: 900
+        margin-top: 0
+        margin-bottom: 0
+        margin-left: -12px
+        color: #030005
+        text-transform: uppercase
+        text-shadow: -1px -1px 0 $color-secondary, 1px 1px 0 $color-primary
+        letter-spacing: -20px
+        @media #{$small-only}
+            font-size: 150px
+
+    h2
+        font-family: 'Montserrat', sans-serif
+        position: absolute
+        left: 0
+        right: 0
+        top: 110px
+        font-size: 42px
+        font-weight: 700
+        color: #fff
+        text-transform: uppercase
+        text-shadow: 0 2px 0 #091c81
+        letter-spacing: 13px
+        margin: 0
+
+    a
+        font-family: 'Montserrat', sans-serif
+        display: inline-block
+        text-transform: uppercase
+        color: $color-primary
+        text-decoration: none
+        border: 2px solid
+        background: 0 0
+        padding: 10px 40px
+        font-size: 14px
+        font-weight: 700
+        -webkit-transition: .2s all
+        transition: .2s all
+        &:hover
+            color: $color-secondary
+    & h2
+        font-size: 32px
+.nav-wrapper.toggle .close
+    float: right
+    font-size: 1.5rem
+    font-weight: 700
+    line-height: 1
+    color: #fff
+    text-shadow: 0 1px 0 #fff
+    opacity: .5

@@ -1,0 +1,58 @@
+/***************************************************************************************************/
+/****************************************** G.E.N.E.R.A.L ******************************************/
+/***************************************************************************************************/
+
+body
+   color: $white
+   font-size: 16px
+   font-family: $font-body
+   background: $color-primary-light
+   overflow-x: hidden
+   color: #313131
+   line-height: 1.5
+.container
+   max-width: 1300px
+.btn:focus
+   box-shadow: none !important
+.form-control:focus
+   box-shadow: none !important
+a
+   text-decoration: none !important
+h1,h5,h6
+   @include font-family
+   font-weight: 600
+   color: $text-color
+.pt-50
+   padding-top: 100px
+
+.pb-50
+   padding-bottom: 100px
+p
+   margin-bottom: 0 !important
+   color: #313131
+   line-height: 1.8
+
+ul
+   padding: 0
+   margin: 0
+   li
+      list-style: none
+img
+   height: 100%
+   width: 100%
+   object-fit: cover
+.text-orange
+   color: #fe7f32 !important
+.text-primary
+   color: $color-primary !important
+.pt-80
+   padding-top: 80px
+@media #{$small-only}
+   .mb-5-media
+      margin-bottom: 30px
+   .pl-0-sm
+      padding-left: 15px !important
+   .mt-5-sm
+      margin-top: 30px
+   .text-center-sm
+      text-align: center !important
