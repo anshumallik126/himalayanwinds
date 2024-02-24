@@ -323,7 +323,7 @@ $pageName = "home";
 <section class="event-section section-gap mb-4">
     <div class="container">
         <div class="row mb-5">
-            <div class="col-md-7">
+            <div class="col-lg-7 col-md-12">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <div class="event_item">
@@ -359,7 +359,7 @@ $pageName = "home";
                     </div>
                 </div>
             </div>
-            <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 ps-5 pl-0-sm mt-5-sm">
+            <div class="col-lg-5 col-md-12 col-sm-6 col-xs-12 ps-5 pl-0-sm mt-5-sm">
                 <div class="wow animate__fadeInLeft" data-wow-duration="1s">
                     <div class=" mb-4">
                         <div class="section_heading">

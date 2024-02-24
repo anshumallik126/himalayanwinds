@@ -5,8 +5,6 @@
     z-index: 99
     background: $color-primary
 .nav-section
-    @media #{$small-only}
-        padding: 10px 0
     .container
         display: flex
         align-items: center
@@ -134,6 +132,12 @@
         #menu-bar
             @media only screen and (min-width: 1300px)
                 display: none !important
+    @media #{$extra-large-and-down}
+        padding: 10px 0
+    @media #{$large-and-down}
+        padding: 10px 0
+    @media #{$small-only}
+        padding: 10px 0
 .theme-btn
     line-height: 45px
     padding: 0 20px

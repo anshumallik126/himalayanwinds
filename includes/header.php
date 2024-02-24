@@ -53,7 +53,8 @@
                 </ul>
             </div>
             <ul class="list-unstyled nav-icons mb-0 pt-1 pt-lg-0">
-                <li><a href="contact.php" class="theme-btn text-uppercase ml-3 text-nowrap d-none d-md-block">Contact
+                <li><a href="contact.php"
+                        class="theme-btn text-uppercase me--md-3 text-nowrap d-none d-md-block">Contact
                         Us</a></li>
                 <li><span id="menu-bar" class="d-inline-block ml-4"><i class="fa fa-bars text-white fa-2x"></i></span>
                 </li>
