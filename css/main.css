@@ -1230,6 +1230,9 @@ h2.heading-title {
   border-radius: 30px;
 }
 .testimonial_s .owl-theme .owl-nav [class*=owl-] {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
   color: #fff !important;
   font-size: 20px !important;
   border-radius: 50px !important;
