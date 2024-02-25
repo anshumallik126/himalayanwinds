@@ -155,13 +155,6 @@
                 background-color: $color-secondary
                 border-color: $color-secondary
                 box-shadow: inset 150px 0 0 0 $color-secondary
-        .user-icon
-            border-bottom: 1px solid transparent
-            display: inline-block
-            @media #{$small-only}
-                border-bottom: none !important
-            &:hover
-                border-bottom: 1px solid white
         #menu-bar
             @media only screen and (min-width: 1300px)
                 display: none !important
@@ -220,8 +213,25 @@
     top: 0
     border-bottom: 0
 // Index page css
+@keyframes shrink
+    0%
+        background-size: 110% 110%
+
+    100%
+        background-size: 100% 100%
 .home-slider
     position: relative
+    overflow: hidden
+    .item
+        background-size: 110% 110%
+        background-position: center center
+        animation: shrink 5s infinite alternate
+        @media #{$extra-large-and-down}
+            animation: none
+        @media #{$large-and-down}
+            animation: none
+        @media #{$small-only}
+            animation: none
     .slider-social-icon
         position: absolute
         right: 1%
@@ -243,11 +253,14 @@
                 color: #fff
                 font-family: $font-body
                 @media #{$extra-large-and-down}
-                    font-size: 40px
+                    font-size: 60px
+                    line-height: 60px
                 @media #{$large-and-down}
-                    font-size: 35px
+                    font-size: 40px
+                    line-height: 45px
                 @media #{$small-only}
                     font-size: 30px
+                    line-height: 40px
             p
                 font-size: 18px
                 margin: 15px 0px 28px 0px
@@ -259,6 +272,12 @@
             text-align: left
             color: $color-secondary
             text-transform: uppercase
+            @media #{$extra-large-and-down}
+                font-size: 60px
+            @media #{$large-and-down}
+                font-size: 40px
+            @media #{$small-only}
+                font-size: 30px
         .heading-sm
             display: inline-block
             background: $color-secondary
@@ -773,44 +792,44 @@ h2.heading-title
             opacity: .8
             margin-top: 30px
             margin-bottom: 45px
-        .play_btn
-            color: $color-secondary
-            position: absolute
-            top: 50%
-            transform: translateY(-50%)
-            right: -115%
-            width: 120px
-            height: 120px
-            line-height: 120px
-            text-align: center
-            background: #fff
-            z-index: 1
-            border-radius: 50%
-            display: flex
-            align-items: center
-            justify-content: center
-            &::after
-                position: absolute
-                content: ""
-                width: 100%
-                height: 100%
-                background: #fff
-                border-radius: 50%
-                top: 0
-                left: 0
-                z-index: -1
-                animation: playAnimi 2s infinite
-            &::before
-                position: absolute
-                content: ""
-                width: 100%
-                height: 100%
-                background: #fff
-                border-radius: 50%
-                top: 0
-                left: 0
-                z-index: -1
-                animation: playAnimi 3s infinite
+.play_btn
+    color: $color-secondary
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    right: -115%
+    width: 120px
+    height: 120px
+    line-height: 120px
+    text-align: center
+    background: #fff
+    z-index: 1
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    &::after
+        position: absolute
+        content: ""
+        width: 100%
+        height: 100%
+        background: #fff
+        border-radius: 50%
+        top: 0
+        left: 0
+        z-index: -1
+        animation: playAnimi 2s infinite
+    &::before
+        position: absolute
+        content: ""
+        width: 100%
+        height: 100%
+        background: #fff
+        border-radius: 50%
+        top: 0
+        left: 0
+        z-index: -1
+        animation: playAnimi 3s infinite
 @keyframes playAnimi
     0%
         opacity: 1
@@ -1177,3 +1196,22 @@ h2.heading-title
             p
                 color: #fff
                 margin-top: 20px
+.video_section
+    .main-container
+        position: relative
+        background-color: black
+        width: 100%
+        overflow: hidden
+        min-height: 25rem
+        border: solid 8px $color-secondary
+        border-style: ridge
+        video
+            position: absolute
+            top: 50%
+            left: 50%
+            min-width: 100%
+            min-height: 100%
+            width: auto
+            height: auto
+            z-index: 0
+            transform: translateX(-50%) translateY(-50%)

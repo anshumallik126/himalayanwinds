@@ -87,10 +87,6 @@ img {
   color: #0D462B !important;
 }
 
-.pt-80 {
-  padding-top: 80px;
-}
-
 @media only screen and (max-width : 1199px) {
   .me--md-3 {
     margin-right: 1rem;
@@ -124,6 +120,44 @@ img {
     text-align: center !important;
   }
 }
+.pb-80 {
+  padding-bottom: 80px;
+}
+@media only screen and (max-width : 767px) {
+  .pb-80 {
+    padding-bottom: 40px;
+  }
+}
+@media only screen and (min-width : 768px) {
+  .pb-80 {
+    padding-bottom: 40px;
+  }
+}
+@media only screen and (min-width : 992px) {
+  .pb-80 {
+    padding-bottom: 40px;
+  }
+}
+
+.pt-80 {
+  padding-top: 80px;
+}
+@media only screen and (max-width : 767px) {
+  .pt-80 {
+    padding-top: 40px;
+  }
+}
+@media only screen and (min-width : 768px) {
+  .pt-80 {
+    padding-top: 40px;
+  }
+}
+@media only screen and (min-width : 992px) {
+  .pt-80 {
+    padding-top: 40px;
+  }
+}
+
 /*********************************************************************************************************************************/
 /******************************************************* O.V.E.R.R.I.D.E.S *******************************************************/
 /*********************************************************************************************************************************/
@@ -355,18 +389,6 @@ img {
   border-color: #EFA31D;
   box-shadow: inset 150px 0 0 0 #EFA31D;
 }
-.nav-section .nav-icons .user-icon {
-  border-bottom: 1px solid transparent;
-  display: inline-block;
-}
-@media only screen and (max-width : 576px) {
-  .nav-section .nav-icons .user-icon {
-    border-bottom: none !important;
-  }
-}
-.nav-section .nav-icons .user-icon:hover {
-  border-bottom: 1px solid white;
-}
 @media only screen and (min-width: 1300px) {
   .nav-section .nav-icons #menu-bar {
     display: none !important;
@@ -447,8 +469,37 @@ img {
   border-bottom: 0;
 }
 
+@keyframes shrink {
+  0% {
+    background-size: 110% 110%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
 .home-slider {
   position: relative;
+  overflow: hidden;
+}
+.home-slider .item {
+  background-size: 110% 110%;
+  background-position: center center;
+  animation: shrink 5s infinite alternate;
+}
+@media only screen and (max-width : 1199px) {
+  .home-slider .item {
+    animation: none;
+  }
+}
+@media only screen and (max-width : 991px) {
+  .home-slider .item {
+    animation: none;
+  }
+}
+@media only screen and (max-width : 576px) {
+  .home-slider .item {
+    animation: none;
+  }
 }
 .home-slider .slider-social-icon {
   position: absolute;
@@ -475,17 +526,20 @@ img {
 }
 @media only screen and (max-width : 1199px) {
   .home-slider .slider-content .banner_text h1 {
-    font-size: 40px;
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 @media only screen and (max-width : 991px) {
   .home-slider .slider-content .banner_text h1 {
-    font-size: 35px;
+    font-size: 40px;
+    line-height: 45px;
   }
 }
 @media only screen and (max-width : 576px) {
   .home-slider .slider-content .banner_text h1 {
     font-size: 30px;
+    line-height: 40px;
   }
 }
 .home-slider .slider-content .banner_text p {
@@ -500,6 +554,21 @@ img {
   text-align: left;
   color: #EFA31D;
   text-transform: uppercase;
+}
+@media only screen and (max-width : 1199px) {
+  .home-slider .slider-content .headline b {
+    font-size: 60px;
+  }
+}
+@media only screen and (max-width : 991px) {
+  .home-slider .slider-content .headline b {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width : 576px) {
+  .home-slider .slider-content .headline b {
+    font-size: 30px;
+  }
 }
 .home-slider .slider-content .heading-sm {
   display: inline-block;
@@ -1146,7 +1215,8 @@ h2.heading-title {
   margin-top: 30px;
   margin-bottom: 45px;
 }
-.about_video .about_video_text .play_btn {
+
+.play_btn {
   color: #EFA31D;
   position: absolute;
   top: 50%;
@@ -1163,7 +1233,7 @@ h2.heading-title {
   align-items: center;
   justify-content: center;
 }
-.about_video .about_video_text .play_btn::after {
+.play_btn::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -1175,7 +1245,7 @@ h2.heading-title {
   z-index: -1;
   animation: playAnimi 2s infinite;
 }
-.about_video .about_video_text .play_btn::before {
+.play_btn::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -1654,6 +1724,27 @@ h2.heading-title {
 .album-section .card-style .image-box-content p {
   color: #fff;
   margin-top: 20px;
+}
+
+.video_section .main-container {
+  position: relative;
+  background-color: black;
+  width: 100%;
+  overflow: hidden;
+  min-height: 25rem;
+  border: solid 8px #EFA31D;
+  border-style: ridge;
+}
+.video_section .main-container video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 /*********************************************************************************************************************************/

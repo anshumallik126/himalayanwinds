@@ -10,7 +10,7 @@ $pageName = "home";
             style="background-image: linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0, 0.4)),url(img/slide3.jpg);">
             <div class="container">
                 <div class="slider-content row">
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-12">
                         <div class="banner_text wow animate__fadeInLeft" data-wow-duration="1s">
                             <h5 class="heading-sm animated slideInLeft mb-3">Nepali tune
                             </h5>
@@ -28,7 +28,7 @@ $pageName = "home";
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-12">
                         <ul class="float-end slider-social-icon">
                             <li><a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a></li>
                             <li><a target="_blank" href="#"><i class="fab fa-twitter"></i></a></li>
@@ -274,6 +274,16 @@ $pageName = "home";
             </div>
         </div>
 </section>
+<section class="video_section pb-80">
+    <div class="container">
+        <div class="main-container mb-5">
+            <video controls playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" height="450"
+                width="100%">
+                <source type="video/mp4" src="img/mountain.mp4">
+            </video>
+        </div>
+    </div>
+</section>
 <section class="img-slider-section section-gap bg-light-green">
     <div class="container">
         <div class="row">
@@ -347,48 +357,28 @@ $pageName = "home";
 <section class="event-section section-gap mb-4">
     <div class="container">
         <div class="row mb-5">
-            <div class="col-lg-7 col-md-12">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <div class="event_item">
-                            <div class="event_item_img">
-                                <img src="img/2.jpg" alt="event" class="img-fluid w-100">
-                            </div>
-                            <div class="event_item_text">
-                                <a class="date" href="#">1 Feb, 2024</a>
-                                <a class="title" href="#">nepal festivals and music</a>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et neque nisl.
-                                    Suspendisse sed dictum felis. Donec arcu</p>
-                                <div class="mt-5">
-                                    <button class="read_more" href="#">Read More</button>
-                                </div>
-                            </div>
-                        </div>
+            <div class="col-lg-5 col-md-12">
+                <div class="event_item">
+                    <div class="event_item_img">
+                        <img src="img/2.jpg" alt="event" class="img-fluid w-100">
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <div class="event_item">
-                            <div class="event_item_img">
-                                <img src="img/4.jpg" alt="event" class="img-fluid w-100">
-                            </div>
-                            <div class="event_item_text">
-                                <a class="date" href="#">1 Feb, 2024</a>
-                                <a class="title" href="#">nepal festivals and music</a>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et neque nisl.
-                                    Suspendisse sed dictum felis. Donec arcu</p>
-                                <div class="mt-5">
-                                    <button class="read_more" href="#">Read More</button>
-                                </div>
-                            </div>
+                    <div class="event_item_text">
+                        <a class="date" href="#">1 Feb, 2024</a>
+                        <a class="title" href="#">nepal festivals and music</a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et neque nisl.
+                            Suspendisse sed dictum felis. Donec arcu</p>
+                        <div class="mt-5">
+                            <button class="read_more" href="#">Read More</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-5 col-md-12 col-sm-6 col-xs-12 ps-5 pl-0-sm mt-5-sm">
+            <div class="col-lg-7 col-md-12 col-sm-6 col-xs-12 ps-5 pl-0-sm mt-5-sm">
                 <div class="wow animate__fadeInLeft" data-wow-duration="1s">
                     <div class=" mb-4">
                         <div class="section_heading">
                             <span class="title-bg-style white-bg-before">Event</span>
-                            <h2>Event Information</h2>
+                            <h2>Upcoming Event</h2>
                         </div>
                     </div>
                     <p class="mb-4">Ram Maharajan (Bansuri) & Navigator (Guidance) Raja Ratna Stavit
