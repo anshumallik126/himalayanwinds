@@ -1115,7 +1115,7 @@ h2.heading-title {
 
 .breadcrumbs {
   background: linear-gradient(rgba(24, 31, 46, 0.7), rgba(24, 31, 46, 0.6)), url(../img/banner.png) no-repeat;
-  min-height: 450px;
+  min-height: 350px;
   background-size: cover;
   display: flex;
   position: relative;
