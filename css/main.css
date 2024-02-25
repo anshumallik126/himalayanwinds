@@ -187,9 +187,6 @@ img {
     display: none;
   }
 }
-.top-bar .container {
-  max-width: 1400px;
-}
 @media only screen and (max-width : 767px) {
   .top-bar .pull-left,
   .top-bar .pull-right {
