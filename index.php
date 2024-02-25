@@ -28,6 +28,14 @@ $pageName = "home";
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-6">
+                        <ul class="float-end slider-social-icon">
+                            <li><a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a target="_blank" href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a target="_blank" href="#"><i class="fab fa-yelp"></i></a></li>
+                            <li><a target="_blank" href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -54,6 +62,14 @@ $pageName = "home";
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-6">
+                        <ul class="float-end slider-social-icon">
+                            <li><a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a target="_blank" href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a target="_blank" href="#"><i class="fab fa-yelp"></i></a></li>
+                            <li><a target="_blank" href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -78,6 +94,14 @@ $pageName = "home";
                                     data-wow-delay="1s">Contact Us</a>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="float-end slider-social-icon">
+                            <li><a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a target="_blank" href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a target="_blank" href="#"><i class="fab fa-yelp"></i></a></li>
+                            <li><a target="_blank" href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>

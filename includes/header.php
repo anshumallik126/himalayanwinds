@@ -20,6 +20,38 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <div class="header">
+    <section class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="pull-left d-flex flex-wrap align-items-center h-100 mt-1 mt-md-0">
+                        <div class="phone me-3 mb-2 mb-md-0">
+                            <i class="fa fa-phone-alt me-1 text-white"></i>
+                            <span><a class="text-white white" href="tel:090-6551-6181">090-6551-6181</a></span>
+                        </div>
+
+                        <div class="mail d-none d-md-block">
+                            <i class="fa fa-map-marker-alt me-1 text-white"></i>
+                            <span class="text-white white display-inline">
+                                7927 Belair Road. Nottingham, MD 21236
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="pull-right d-flex align-items-center justify-content-end mb-2 mb-md-0">
+                        <ul class="d-none d-md-flex list-unstyled social-icons mb-0">
+                            <li><a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a target="_blank" href="#"><i class="fab fa-yelp"></i></a></li>
+                            <li><a target="_blank" href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a target="_blank" href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a target="_blank" href="#"><i class="fab fa-tripadvisor"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="nav-section">
         <div class="container">
             <div class="logo">

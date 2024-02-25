@@ -1,9 +1,42 @@
 // navbar css
 .header
-    position: absolute
+    position: relative
     width: 100%
     z-index: 99
     background: $color-primary
+.top-bar
+    background: #000
+    font-size: 14px
+    padding: 7px 0
+    border-bottom: 1px solid rgba(255,255,255,0.1)
+    @media #{$large-and-down}
+        display: none
+    @media #{$small-only}
+        display: none
+    .container
+        max-width: 1400px
+    .pull-left,
+    .pull-right
+        @media #{$medium-and-down}
+            justify-content: center !important
+    .social-icons
+        li
+            a
+                display: inline-block
+                text-align: center
+                color: white
+                background: $color-primary
+                border-radius: 50px
+                width: 30px
+                height: 30px
+                line-height: 30px
+                margin-left: 10px
+                transition: all linear .3s
+                i
+                    font-size: 14px
+                    line-height: 30px
+                &:hover
+                    color: $color-secondary
 .nav-section
     .container
         display: flex
@@ -189,9 +222,17 @@
 // Index page css
 .home-slider
     position: relative
+    .slider-social-icon
+        position: absolute
+        right: 1%
+        top: 35%
+        li
+            padding: 10px
+            a
+                color: #fff
     .slider-content
         .banner_text
-            padding-top: 100px
+            // padding-top: 100px
             flex-direction: column
             justify-content: center
             h1
@@ -229,8 +270,8 @@
             text-transform: uppercase
     .owl-carousel
         .item
-            height: 100vh
-            min-height: 650px
+            height: 90vh
+            min-height: 550px
             width: 100%
             background-size: cover
             background-position: center
