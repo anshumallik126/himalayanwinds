@@ -16,7 +16,7 @@ $pageName = 'gallery';
                 </div>
             </div>
         </div>
-        <div class="row gallery-details">
+        <div class="row gallery-details mb-5">
             <div class="col-lg-3 col-md-6 py-4">
                 <div class="gallery-photo">
                     <img src="img/1.jpg" class="img-fluid" alt="">

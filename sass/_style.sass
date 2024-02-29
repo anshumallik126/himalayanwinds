@@ -361,6 +361,8 @@
             border: 10px solid $color-primary-light
             border-radius: 0
             border-right: 0
+            img
+                max-height: 450px
             @media #{$large-and-down}
                 position: static
                 border: none
@@ -539,6 +541,8 @@ h2.heading-title
                 width: 100%
             @media #{$small-only}
                 width: 100%
+            img
+                max-height: 450px
         h3
             position: absolute
             top: 0
@@ -604,9 +608,11 @@ h2.heading-title
         display: block
         width: 160px
         height: 160px
-        border-radius: 50%
         overflow: hidden
         margin: 0 auto
+        img
+            height: 100%
+            border-radius: 50%
     .title
         color: #000
         font-family: $font-heading
@@ -619,6 +625,7 @@ h2.heading-title
 .call-to-action
     background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 100%),url(../img/bg.avif)
     background-size: cover
+    background-repeat: no-repeat
     .text_2
         h2
             font-size: 40px
@@ -655,6 +662,7 @@ h2.heading-title
         overflow: hidden
         img
             transition: all linear .3s
+            height: 100%
     .event_item_text
         border-radius: 10px
         text-align: center
@@ -1149,8 +1157,9 @@ h2.heading-title
         background-color: #e9ecef
         margin-bottom: 30px
     .timeline-img
+        height: 400px
         img
-            height: auto
+            height: 100%
     .timeline-text
         line-height: 1
         padding: 38px
@@ -1176,9 +1185,11 @@ h2.heading-title
         background: $color-primary
         padding: 20px
         .img-style
+            height: 250px
             img
                 border-radius: 30px 0
                 transition: .3s
+                height: 100%
             &:hover
                 img
                     transform: scale(1.05)

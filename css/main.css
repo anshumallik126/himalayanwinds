@@ -673,6 +673,9 @@ img {
   border-radius: 0;
   border-right: 0;
 }
+.about .about-img .about-img-2 img {
+  max-height: 450px;
+}
 @media only screen and (max-width : 991px) {
   .about .about-img .about-img-2 {
     position: static;
@@ -904,6 +907,9 @@ h2.heading-title {
     width: 100%;
   }
 }
+.profile-section .profile_img .img img {
+  max-height: 450px;
+}
 .profile-section .profile_img h3 {
   position: absolute;
   top: 0;
@@ -978,9 +984,12 @@ h2.heading-title {
   display: block;
   width: 160px;
   height: 160px;
-  border-radius: 50%;
   overflow: hidden;
   margin: 0 auto;
+}
+.popular_album .img img {
+  height: 100%;
+  border-radius: 50%;
 }
 .popular_album .title {
   color: #000;
@@ -996,6 +1005,7 @@ h2.heading-title {
 .call-to-action {
   background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 100%), url(../img/bg.avif);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .call-to-action .text_2 h2 {
   font-size: 40px;
@@ -1041,6 +1051,7 @@ h2.heading-title {
 }
 .event-section .event_item_img img {
   transition: all linear 0.3s;
+  height: 100%;
 }
 .event-section .event_item_text {
   border-radius: 10px;
@@ -1670,8 +1681,11 @@ h2.heading-title {
   background-color: #e9ecef;
   margin-bottom: 30px;
 }
+.special-area .timeline-img {
+  height: 400px;
+}
 .special-area .timeline-img img {
-  height: auto;
+  height: 100%;
 }
 .special-area .timeline-text {
   line-height: 1;
@@ -1702,9 +1716,13 @@ h2.heading-title {
   background: #0D462B;
   padding: 20px;
 }
+.album-section .card-style .img-style {
+  height: 250px;
+}
 .album-section .card-style .img-style img {
   border-radius: 30px 0;
   transition: 0.3s;
+  height: 100%;
 }
 .album-section .card-style .img-style:hover img {
   transform: scale(1.05);

@@ -117,7 +117,7 @@ $pageName = "home";
                         <img src="img/nature.jpg" alt="" class="img-fluid">
                     </div>
                     <div class="about-img-2">
-                        <img src="img/akash.png" alt="" class="img-fluid">
+                        <img src="img/nature.jpg" alt="" class="img-fluid">
                     </div>
                 </div>
             </div>

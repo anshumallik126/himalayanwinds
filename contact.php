@@ -97,7 +97,7 @@ $pageName = 'contact';
 </section>
 <section class="section-gap reveal">
     <div class="container">
-        <div class="row pt-4">
+        <div class="row mb-5">
             <div class="col-md-12 col-lg-12 my-auto order-2 order-md-2 order-lg-12 mt-md-device">
                 <div class="place-holder-img">
                     <iframe
